@@ -20,7 +20,7 @@ public class SecurityConfig {
                 .oauth2ResourceServer(oauth2 -> oauth2
                         .jwt(jwtConfigurer -> jwtConfigurer
                                 .jwtAuthenticationConverter(authenticationTokenConverter)
-                                .jwkSetUri("http://localhost:8080/oauth2/jwks")
+                                .jwkSetUri("https://authentication.rd.redpay.africa/.well-known/openid-configuration/jwks")
                 ));
 
 //        http.authorizeHttpRequests(authorize ->
